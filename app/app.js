@@ -1,11 +1,11 @@
 (function(){
     angular.module('TimeWaste',['ui.router'])
-        .config($stateProvider){
+        .config(function($stateProvider){
             $stateProvider
                 .state('signUp', {
-                url: '',
+                url: '/signup',
                 templateUrl: 'app/signup/signup.html',
                 controller: 'SignUpController'
             })
-    }
+    })
 }());
